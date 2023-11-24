@@ -25,3 +25,100 @@ header{
     width: 50px; /* Adjust the width of the logo as needed */
     height: auto;
 }
+
+
+main {
+    padding: 20px;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.image-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto;
+}
+
+/* Content Styles */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.section-karate{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-youga{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-kalari{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section-taekwondo{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section-self-defence{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section-kick-boxing{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-fitness-training{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.span-heading{
+    font-weight: bolder;
+}
+.conclusion{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 40px; /* Adjust the icon size as needed */
+    height: 40px;
+}
+
+
+/* Responsive Content */
+@media (max-width: 768px) {
+    .content {
+        font-size: 1rem;
+    }
+}
+
+
