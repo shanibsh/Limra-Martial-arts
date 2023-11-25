@@ -10,16 +10,25 @@
 
 <body>
     <header>
-    <nav class="navbar">
-        <div class="text-center">
-            <h1>LIMRA</h1>
-        </div>
-        <div class="logo">
-            <img src="images/limra-removebg-preview.png" alt="Image Error">
-        </div>
-    </nav>
+        <nav class="navbar">
+            <div class="menu-toggle" id="menuToggle">&#9776;</div>
+            <div class="text-center">
+                <h1>Limra</h1>
+            </div>
+            <div class="logo">
+                <img src="images/limra-removebg-preview.png" alt="Logo">
+            </div>
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Class</a></li>
+                    <li><a href="#">Trainer</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    
+
     <main>
 
         <section class="welcome-section">
@@ -105,7 +114,22 @@
             <a href="https://wa.me/+917025425747" target="_blank"><img src="images/figma images/whatsapp.png" alt="WhatsApp"></a>
         </div>
     </footer>
-    
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', function(event) {
+            event.stopPropagation();
+            menu.classList.toggle('show-menu');
+        });
+
+        document.addEventListener('click', function(event) {
+            if (!menu.contains(event.target) && menu.classList.contains('show-menu')) {
+                menu.classList.remove('show-menu');
+            }
+        });
+    </script>
 </body>
 
 </html>

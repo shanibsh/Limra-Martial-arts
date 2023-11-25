@@ -112,12 +112,100 @@ footer {
     width: 40px; /* Adjust the icon size as needed */
     height: 40px;
 }
+/* Navbar Styles */
+header {
+    background: #EFEFEF;
+    padding: 1rem;
+}
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-center {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.text-center h1 {
+    margin: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 2rem;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.menu {
+    display: none; /* Initially hide the menu */
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: calc(100vh - 20px); /* Adjust the height to cover most of the viewport */
+    max-width: 200px;
+    width: 250px; /* Adjust the width of the menu */
+    height: 100vh; /* Cover the entire viewport height */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    animation: fadeInMenu 0.3s ease-in-out; /* Animation for menu appearance */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 8px 0;
+    border-radius: 20px; /* Rounded shape for each menu item */
+    overflow: hidden;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 8px 12px;
+    background-color: #c0c0c0; /* Background color for menu items */
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+.menu ul li a:hover {
+    background-color: #a0a0a0; /* Background color on hover */
+}
+.menu-toggle {
+    cursor: pointer;
+}
+.menu.show-menu {
+    display: block; /* Show the menu when 'show-menu' class is applied */
+}
+.menu.show-menu {
+    display: block !important; /* Example use of !important */
+}
 
 /* Responsive Content */
 @media (max-width: 768px) {
     .content {
         font-size: 1rem;
+    }
+}
+
+/* Animation keyframes for menu appearance */
+@keyframes fadeInMenu {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
