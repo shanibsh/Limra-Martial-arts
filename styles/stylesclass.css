@@ -1,0 +1,106 @@
+
+/* Add your CSS styles here */
+/* Example styles for layout and presentation */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* --------------------------navbar-------------------------- */
+
+header {
+    background: #EFEFEF;
+    color: #000;
+    padding: 15px 20px; /* Adjust padding */
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+main {
+    padding: 20px;
+}
+.class-info {
+    margin-bottom: 20px;
+}
+h2 {
+    color: #333;
+}
+/* Your existing styles for the navigation might be here */
+
+.back-button {
+display: inline-block;
+text-decoration: none;
+color: #333;
+padding: 0.5rem 1rem; /* Fixed padding for the back button */
+border-radius: 5px;
+font-size: 0.875rem; /* Fixed font size for the back button text */
+background-color: #eee;
+}
+
+.back-button i {
+margin-right: 5px;
+}
+
+.navbar-left {
+float: left; /* Ensures the left alignment */
+}
+
+/* Additional styling as needed */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a {
+font-size: 14px; /* Adjust font size as needed */
+}
+.text-center {
+  flex-grow: 1; /* Allows the text to take available space */
+  text-align: center; /* Aligns the text horizontally */
+}
+.text-center h1 {
+    font-size: 24px; /* Adjust font size */
+    margin: 0;
+}
+
+.text-center h1 {
+    font-size: 1.5rem; /* Fixed font size for the text */
+}
+
+/* Fixed sizes for elements in the navbar using rem units */
+.logo img {
+    width: 2.5rem; /* Fixed width for the logo */
+    height: auto;
+}
+.logo {
+    margin-right: 20px; /* Adjust margin as needed */
+}
+/* ------------x--------------navbar--------------x------------ */
+
+
+/* Adjusting specific elements for mobile screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 20px !important; /* Increase padding for the navbar */
+    }
+
+    .text-center h1 {
+        font-size: 24px !important; /* Increase font size for the text */
+    }
+
+    .logo img {
+        width: 40px !important; /* Adjust width for the logo */
+        height: auto !important;
+    }
+
+    .back-button {
+        padding: 8px 12px !important; /* Adjust padding for the back button */
+        font-size: 14px !important; /* Adjust font size for the back button text */
+    }
+}
