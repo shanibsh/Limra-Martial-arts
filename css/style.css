@@ -3,10 +3,12 @@ body{
 
 }
 /* --------------------------navbar-------------------------- */
+
 header{
     background: #EFEFEF;
     padding: 1rem;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
