@@ -91,6 +91,24 @@ p {
     line-height: 1.5;
 }
 
+
+/* -------------------------main-section---------------------------- */
+
+
+.class-info {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* ------------x---------------main-section------------------x------------- */
+
+
+
+
+
 @media screen and (max-width: 768px) {
     /* Responsive CSS code for your HTML code */
 
