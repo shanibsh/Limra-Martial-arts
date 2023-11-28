@@ -1,0 +1,130 @@
+/* CSS code for your HTML code */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EFEFEF;
+
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+
+.back-button {
+    text-decoration: none;
+    color: #333;
+    padding: 12px 24px; /* Increase padding for the back button */
+    border-radius: 5px;
+    font-size: 16px; /* Increase font size for better visibility */
+    background-color: #eee;
+    display: inline-flex;
+    align-items: center;
+    
+    
+}
+.back-button i {
+    margin-right: 8px; /* Adjust margin for the back button icon */
+}
+
+
+.back-button:hover {
+    background-color: #888585;
+}
+.text-center {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.text-center h1 {
+    margin: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 2rem; /* Set the font size using rem (for example) */
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 100px;
+    height: 60px;
+}
+
+.logo img {
+    width: 60px; /* Adjust the width of the logo as needed */
+    height: auto;
+    object-fit: contain;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+    /* Responsive CSS code for your HTML code */
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-left {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .text-center {
+        width: 100%;
+    }
+
+    .logo {
+        display: none;
+    
+    }
+}
+
+@media (max-width: 987px){
+
+    .back-button{
+        font-size: 2rem;
+    }
+
+    .navbar{
+        height: 150px;
+    }
+
+    .text-center{
+
+        margin-left: -50px;
+        
+    }
+ 
+}

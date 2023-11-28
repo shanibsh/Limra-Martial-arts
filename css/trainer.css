@@ -40,7 +40,7 @@
 
 
 .back-button:hover {
-    background-color: #444;
+    background-color: #888585;
 }
 .text-center {
     flex-grow: 1;
@@ -76,9 +76,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-.class-info {
-    margin-bottom: 20px;
-}
 
 h2 {
     font-size: 24px;
@@ -129,5 +126,4 @@ p {
         
     }
  
-
 }
