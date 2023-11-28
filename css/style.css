@@ -23,6 +23,7 @@ header{
     color: #000;
     font-family: Inter;
     font-size: 2rem; /* Adjust the font size as needed */
+    text-transform: uppercase;
 }
 .logo img {
     width: 50px; /* Adjust the width of the logo as needed */
