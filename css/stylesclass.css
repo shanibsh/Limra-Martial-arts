@@ -124,7 +124,10 @@ p {
     }
 
     .text-center{
-        font-size: 3.3rem;
+
+        margin-left: -50px;
+        
     }
+ 
 
 }
