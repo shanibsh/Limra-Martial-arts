@@ -78,7 +78,7 @@ h1 {
 
 
 h2 {
-    font-size: 24px;
+    font-size: 35px;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -94,22 +94,30 @@ p {
 
 .trainer-section {
     width: 100%;
-    height: 30rem;
+    height: 46rem;
     text-align: center;
     padding: 20px;
 }
 
 .trainer-card {
     display: inline-block;
-    width: 483px;
+    width: 641px;
     margin: 20px;
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 5px;
 }
+.trainer-text{
+    font-size: 2.3rem;
+}
+
+p {
+    font-size: 30px;
+    line-height: 1.5;
+}
 
 .trainer-card img {
-    width: 436px;
+    width: 631px;
     height: auto;
     /* border-radius: 50%; */
     margin-bottom: 42px;
