@@ -5,8 +5,15 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    padding-top: 60px;
+}
 .navbar {
+    position: fixed;
+    top: 0;
+    left: -13px;
+    width: 100%; /* Ensure the navbar spans the entire width */
+    z-index: 1000; /* Adjust the z-index as needed */
     height: 100px;
     display: flex;
     flex-wrap: wrap;
@@ -101,7 +108,7 @@ p {
 
 .trainer-card {
     display: inline-block;
-    width: 641px;
+    width: 763px;
     margin: 20px;
     border: 1px solid #ddd;
     padding: 10px;
@@ -114,8 +121,15 @@ p {
 p {
     font-size: 30px;
     line-height: 1.5;
+    font-weight: bold;
+    text-align: left;
 }
-
+.approvals-list{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: left;
+}
 .trainer-card img {
     width: 631px;
     height: auto;
@@ -180,5 +194,16 @@ p {
         margin-left: -50px;
         
     }
- 
+
+    p{
+        font-size: 45px;
+    }
+
+    .approvals-list{
+        font-size: 40px;
+    }
+    
+    body{
+        padding-top: 130px;
+    }
 }

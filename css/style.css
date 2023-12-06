@@ -1,19 +1,30 @@
 body{
+    padding-top: 60px;
     margin: 0;
 
 }
 /* --------------------------navbar-------------------------- */
 
 header{
+  
     background: #EFEFEF;
     padding: 1rem;
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    left: -13px;
+    width: 100%; /* Ensure the navbar spans the entire width */
+    z-index: 1000; /* Adjust the z-index as needed */
+    /* Existing styles */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #EFEFEF;
+    padding: 1rem;
 }
+
 .text-center {
     flex-grow: 1; /* Allows the text to take available space */
     text-align: center; /* Aligns the text horizontally */
@@ -26,6 +37,8 @@ header{
     text-transform: uppercase;
 }
 .logo img {
+    margin-left: -47px;
+    margin-right: 14px;
     width: 50px; /* Adjust the width of the logo as needed */
     height: auto;
 }
