@@ -99,48 +99,114 @@ p {
 
 /* -------------------------main-section---------------------------- */
 
-.section-kalari{
+/* Style for the class images section */
+.class-details {
+    
     text-align: center;
-    margin-bottom: 40px;
-}
-
-.span-heading{
-    font-weight: bolder;
-}
-
-
-.image-container {
-    margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.image-container img {
-    max-width: 100%; /* Ensure the image is responsive */
-    height: auto;
-}
-/* Style for the class description */
-.class-description {
-    text-align: center;
-    padding: 20px;
 }
 
 .class-images {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column; /* Display images in a column */
     align-items: center;
-    margin-top: 20px; /* Adjust margin as needed */
+    gap: 20px;
+}
+/* Style for individual class image container */
+.class-image {
+    position: relative;
+    width: 100%; /* Occupy full width */
+    overflow: hidden;
+    border-radius: 10px;
+}
+/* Style for the image */
+.class-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
-/* Style for individual class images */
-.class-images img {
-    width: calc(50% - 20px); /* 50% width minus padding (20px) for each image */
-    height: auto; /* Ensure aspect ratio is maintained */
-    margin: 0 10px; /* Adjust margin between images */
-    border-radius: 5px; /* Add border radius for a rounded look */
-    /* Add any other specific styles you want for the images */
-    padding: 10px; /* Add padding around each image */
-    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+/* Style for the overlay */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
+
+/* Style for the overlay content */
+.overlay h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.overlay p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Hover effect */
+.class-image:hover .overlay {
+    opacity: 1;
+}
+
+/* Style for the class images section */
+.class-images {
+    display: flex;
+    flex-direction: column; /* Display images in a column */
+    align-items: center;
+    gap: 20px;
+}
+
+/* Style for individual class image container */
+.class-image {
+    position: relative;
+    width: 100%; /* Occupy full width */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Style for the gradient overlay */
+.class-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 90%);
+    opacity: 1; /* Show the gradient overlay */
+    transition: opacity 0.3s ease; /* Optional: Add transition effect */
+}
+
+/* Style for the class image text */
+.class-image p {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0; /* Hide the text by default */
+    transition: opacity 0.3s ease; /* Optional: Add transition effect */
+}
+
+/* Hover effect to show text on image hover */
+.class-image:hover::before {
+    opacity: 1;
+}
+
+.class-image:hover p {
+    opacity: 1;
+}
+
 
 /* ------------x---------------main-section------------------x------------- */
 
@@ -189,6 +255,6 @@ p {
     }
     
     body{
-        padding-top: 130px;
+        padding-top: 150px;
     }
 }
