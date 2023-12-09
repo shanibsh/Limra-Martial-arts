@@ -1,209 +1,188 @@
 /* CSS code for your HTML code */
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    padding-top: 60px;
+body {
+  padding-top: 60px;
 }
 .navbar {
-    position: fixed;
-    top: 0;
-    left: -13px;
-    width: 100%; /* Ensure the navbar spans the entire width */
-    z-index: 1000; /* Adjust the z-index as needed */
-    height: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #EFEFEF;
-
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 100%; /* Ensure the navbar spans the entire width */
+  z-index: 1000; /* Adjust the z-index as needed */
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #efefef;
 }
 
 .navbar-left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-
 
 .back-button {
-    text-decoration: none;
-    color: #333;
-    padding: 12px 24px; /* Increase padding for the back button */
-    border-radius: 5px;
-    font-size: 16px; /* Increase font size for better visibility */
-    background-color: #eee;
-    display: inline-flex;
-    align-items: center;
-    
-    
+  text-decoration: none;
+  color: #333;
+  padding: 12px 24px; /* Increase padding for the back button */
+  border-radius: 5px;
+  font-size: 16px; /* Increase font size for better visibility */
+  background-color: #eee;
+  display: inline-flex;
+  align-items: center;
 }
 .back-button i {
-    margin-right: 8px; /* Adjust margin for the back button icon */
+  margin-right: 8px; /* Adjust margin for the back button icon */
 }
-
 
 .back-button:hover {
-    background-color: #888585;
+  background-color: #888585;
 }
 .text-center {
-    flex-grow: 1;
-    text-align: center;
+  flex-grow: 1;
+  text-align: center;
 }
 
 .text-center h1 {
-    margin: 0;
-    color: #000;
-    font-family: Inter;
-    font-size: 2rem; /* Set the font size using rem (for example) */
-    text-transform: uppercase;
+  margin: 0;
+  color: #000;
+  font-family: Inter;
+  font-size: 2rem; /* Set the font size using rem (for example) */
+  text-transform: uppercase;
 }
 
 .logo {
-    width: 100px;
-    height: 60px;
+  width: 100px;
+  height: 60px;
 }
 
 .logo img {
-    width: 60px; /* Adjust the width of the logo as needed */
-    height: auto;
-    object-fit: contain;
+  width: 60px; /* Adjust the width of the logo as needed */
+  height: auto;
+  object-fit: contain;
 }
 
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-
 h2 {
-    font-size: 35px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 p {
-    font-size: 18px;
-    line-height: 1.5;
+  font-size: 18px;
+  line-height: 1.5;
 }
- 
+
 /* -------------------------main-section---------------------------- */
 
 /* Sample CSS for the Trainer section */
 
 .trainer-section {
-    width: 100%;
-    height: 46rem;
-    text-align: center;
-    padding: 20px;
+  width: 100%;
+  height: 46rem;
+  text-align: center;
+  padding: 20px;
 }
 
 .trainer-card {
-    display: inline-block;
-    width: 763px;
-    margin: 20px;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
+  display: inline-block;
+  width: 763px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
 }
-.trainer-text{
-    font-size: 2.3rem;
+.trainer-text {
+  font-size: 2.3rem;
 }
 
 p {
-    font-size: 30px;
-    line-height: 1.5;
-    font-weight: bold;
-    text-align: left;
+  font-size: 30px;
+  line-height: 1.5;
+  font-weight: bold;
+  text-align: left;
 }
-.approvals-list{
-    font-size: 30px;
-    font-weight: bold;
-    font-family: "Lucida Console", "Courier New", monospace;
-    text-align: left;
+.approvals-list {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align: left;
 }
 .trainer-card img {
-    width: 631px;
-    height: auto;
-    /* border-radius: 50%; */
-    margin-bottom: 42px;
+  width: 631px;
+  height: auto;
+  /* border-radius: 50%; */
+  margin-bottom: 42px;
 }
 
 /* Adjust styles as needed for responsiveness */
 @media screen and (max-width: 768px) {
-    .trainer-card {
-        width: 100%;
-    }
+  .trainer-card {
+    width: 100%;
+  }
 }
-
-
-
-
-
-
 
 /* ------------x---------------main-section------------------x------------- */
 
-
-
-
-
-
 @media screen and (max-width: 768px) {
-    /* Responsive CSS code for your HTML code */
+  /* Responsive CSS code for your HTML code */
 
-    .navbar {
-        flex-direction: column;
-    }
+  .navbar {
+    flex-direction: column;
+  }
 
-    .navbar-left {
-        width: 100%;
-        justify-content: flex-start;
-    }
+  .navbar-left {
+    width: 100%;
+    justify-content: flex-start;
+  }
 
-    .text-center {
-        width: 100%;
-    }
+  .text-center {
+    width: 100%;
+  }
 
-    .logo {
-        display: none;
-    
-    }
+  .logo {
+    display: none;
+  }
 }
 
-@media (max-width: 987px){
+@media (max-width: 987px) {
+  .back-button {
+    font-size: 2rem;
+  }
 
-    .back-button{
-        font-size: 2rem;
-    }
+  .navbar {
+    height: 150px;
+  }
 
-    .navbar{
-        height: 150px;
-    }
+  .text-center {
+    margin-left: -50px;
+  }
 
-    .text-center{
+  p {
+    font-size: 45px;
+  }
 
-        margin-left: -50px;
-        
-    }
+  .approvals-list {
+    font-size: 40px;
+  }
 
-    p{
-        font-size: 45px;
-    }
-
-    .approvals-list{
-        font-size: 40px;
-    }
-    
-    body{
-        padding-top: 130px;
-    }
+  body {
+    padding-top: 130px;
+  }
 }
