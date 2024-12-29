@@ -1,6 +1,6 @@
 # Limra Martial Arts Website
 
-This project is the official website for Limra Martial Arts.
+
 
 ## Table of Contents
 - [Introduction](#introduction)
